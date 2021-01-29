@@ -6,8 +6,15 @@
 <p><strong>{{obj.b.c}}</strong></p>
 <p><strong>{{'Hello '+'World'}}</strong></p>-->
 
-<img [src]="image">
-
+<!--<img [src]="image">-->
+<button (click)="onClick()">Click me</button>
+<input
+  type='text'
+  (keyup.enter)="onInput($event)"
+  (blur)="onBlur(myInput.value)"
+  #myInput
+>
+<p><strong>{{inputValue}}</strong></p>
 <hr>
 <app-post></app-post>
 <!--<app-post></app-post>-->
