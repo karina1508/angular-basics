@@ -14,6 +14,7 @@ export class AppComponent {
   image = 'https://e7.pngegg.com/pngimages/599/417/png-clipart-react-angularjs-javascript-library-node-js-github-symmetry-web-application.png';
   inputValue = '';
   @Input() data: string;
+  tittle = 'Initial';
 
   constructor() {
     /*   setTimeout(() => {
@@ -22,21 +23,26 @@ export class AppComponent {
 
   }
 
+  onInput(event: any): void {
+    this.tittle = event.target.value;
+  }
+
+
   /*  onInput(event?): void {
       console.log(event);
       this.inputValue = event.target.value;
     }*/
-  onInput(event?: KeyboardEvent): void {
-    console.log(event);
-    this.inputValue = (<HTMLInputElement> event.target).value;
-  }
+  /*  onInput(event?: KeyboardEvent): void {
+      console.log(event);
+      this.inputValue = (<HTMLInputElement> event.target).value;
+    }
 
-  onBlur(str: string): void {
-    this.inputValue = str;
-  }
+    onBlur(str: string): void {
+      this.inputValue = str;
+    }
 
-  onClick(): void {
-    console.log('Was click');
-  }
+    onClick(): void {
+      console.log('Was click');
+    }*/
 
 }

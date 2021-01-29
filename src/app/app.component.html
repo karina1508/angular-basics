@@ -7,7 +7,10 @@
 <p><strong>{{'Hello '+'World'}}</strong></p>-->
 
 <!--<img [src]="image">-->
-<button (click)="onClick()">Click me</button>
+<!--<input inputtype="text" [value]="tittle" (input)="onInput($event)">-->
+<input type='text' [(ngModel)]="tittle">
+<p>{{tittle}}</p>
+<!--<button (click)="onClick()">Click me</button>
 <input
   type='text'
   (keyup.enter)="onInput($event)"
@@ -17,6 +20,6 @@
 <p><strong>{{inputValue}}</strong></p>
 <hr>
 <app-post></app-post>
-<!--<app-post></app-post>-->
+&lt;!&ndash;<app-post></app-post>&ndash;&gt;
 <hr>
-<app-post4></app-post4>
+<app-post4></app-post4>-->
