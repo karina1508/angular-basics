@@ -1,4 +1,16 @@
 <h1>Hello Angular world!</h1>
+<button (click)="backGroundToggle = !backGroundToggle">Toggle</button>
+<div [ngStyle]="{
+width: '200px',
+height: '200px',
+borderRadius: '5px',
+border: '1px solid #ccc',
+background: backGroundToggle ? 'red' : 'blue'
+}">
+
+</div>
+
+
 <!--<p>{{title}}</p>
 <p><strong>{{number - 2 }}</strong></p>
 <p><strong>{{arr}}</strong></p>
@@ -8,8 +20,8 @@
 
 <!--<img [src]="image">-->
 <!--<input inputtype="text" [value]="tittle" (input)="onInput($event)">-->
-<input type='text' [(ngModel)]="tittle">
-<p>{{tittle}}</p>
+<!--<input type='text' [(ngModel)]="tittle">
+<p>{{tittle}}</p>-->
 <!--<button (click)="onClick()">Click me</button>
 <input
   type='text'

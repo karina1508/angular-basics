@@ -15,6 +15,7 @@ export class AppComponent {
   inputValue = '';
   @Input() data: string;
   tittle = 'Initial';
+  backGroundToggle = false;
 
   constructor() {
     /*   setTimeout(() => {
